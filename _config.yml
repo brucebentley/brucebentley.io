@@ -1,190 +1,236 @@
 layout: sidebar
-# layout: stacked
-# style: dark
 style: dark
-
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
-
-permalink: /:year/:month/:day/:title/
-
+permalink: '/:year/:month/:day/:title/'
 defaults:
   - scope:
       path: ''
-      type: 'posts'
+      type: posts
     values:
-      layout: 'post'
-
-projects:
-  sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 0
-  exclude:
-    archived: false
-    forks: false
-    projects:
-    # - repo-name
-
+      layout: post
 social_media:
-  # behance:
-  # dribbble:
-  facebook: wansoo.k.seo
-  # hackerrank:
-  instagram: swansu007
-  #keybase:
-  linkedin: wansooseo
-  # lmedium:
-  # stackoverflow:
-  # telegram:
-  # twitter:
-  #   unsplash: your_username
-  #   vk: your_username
-  website: https://www.wansooseo.com/
-  # youtube:
-
+  behance: brucebentley
+  dribbble: brucebentley
+  facebook: brucembentley
+  hackerrank: brucebentley
+  instagram: brucebentley
+  keybase: brucebentley
+  linkedin: brucembentley
+  medium: brucebentley
+  stackoverflow: 9990956
+  telegram: brucebentley
+  twitter: bruce_bentley
+  website: 'https://brucebentley.io/'
+  youtube: BruceBentley
 projects:
   sort_by: pushed
-  # sort_by options:
-  #   - pushed
-  #   - stars
   limit: 9
   exclude:
     archived: false
     forks: true
-    projects:
-    # - repo-name
-
-# social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  # hackerrank: your_username
-  # instagram: your_username
-  # keybase: your_username
-  # linkedin: your_username
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
-  # unsplash: your_username
-
+    projects: null
 topics:
-  - name: Front-End
-    web_url: https://github.com/topics/frontend
-
-  - name: HTML
-    web_url: https://github.com/topics/html
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png
-
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png
-
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png
-
-  - name: JavaScript
-    web_url: https://github.com/topics/javascript
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png
-
-  - name: TypeScript
-    web_url: https://github.com/topics/typescript
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png
-
-  - name: Node.js
-    web_url: https://github.com/topics/nodejs
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
-
-  - name: ES6
-    web_url: https://github.com/topics/es6
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/es6/es6.png
-
-  - name: Angular
-    web_url: https://github.com/topics/angular
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png
-
-  - name: NPM
-    web_url: https://github.com/topics/npm
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png
-
-  - name: React
-    web_url: https://github.com/topics/react
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png
-
   - name: AWS ( Amazon Web Services )
-    web_url: https://github.com/topics/aws
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png
-
+    web_url: 'https://github.com/topics/aws'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aws/aws.png
+  - name: Azure
+    web_url: 'https://github.com/topics/azure'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/eaef8552d8b082ffafe2bfc8a5023d47da904aac/topics/azure/azure.png
+  - name: Terraform
+    web_url: 'https://github.com/topics/twrraform'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terraform/terraform.png
+  - name: Continuous Integration
+    web_url: 'https://github.com/topics/continuous-integration'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/continuous-integration/continuous-integration.png
   - name: Docker
-    web_url: https://github.com/topics/docker
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png
-
+    web_url: 'https://github.com/topics/docker'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png
+  - name: Kubernetes
+    web_url: 'https://github.com/topics/kubernetes'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/kubernetes/kubernetes.png
+  - name: Ansible
+    web_url: 'https://github.com/topics/ansible'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ansible/ansible.png
+  - name: Security
+    web_url: 'https://github.com/topics/security'
+  - name: Server
+    web_url: 'https://github.com/topics/server'
   - name: Terminal
-    web_url: https://github.com/topics/terminal
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png
-
+    web_url: 'https://github.com/topics/terminal'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png
   - name: Bash
-    web_url: https://github.com/topics/bash
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bash/bash.png
-
+    web_url: 'https://github.com/topics/bash'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bash/bash.png
+  - name: PowerShell
+    web_url: 'https://github.com/topics/powershell'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/powershell/powershell.png
+  - name: Front-End
+    web_url: 'https://github.com/topics/frontend'
+  - name: HTML
+    web_url: 'https://github.com/topics/html'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png
+  - name: CSS
+    web_url: 'https://github.com/topics/css'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png
+  - name: Sass
+    web_url: 'https://github.com/topics/sass'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png
+  - name: JavaScript
+    web_url: 'https://github.com/topics/javascript'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png
+  - name: TypeScript
+    web_url: 'https://github.com/topics/typescript'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png
+  - name: Node.js
+    web_url: 'https://github.com/topics/nodejs'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
+  - name: ES6
+    web_url: 'https://github.com/topics/es6'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/es6/es6.png
+  - name: Angular
+    web_url: 'https://github.com/topics/angular'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png
+  - name: NPM
+    web_url: 'https://github.com/topics/npm'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/npm/npm.png
+  - name: React
+    web_url: 'https://github.com/topics/react'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png
+  - name: Redux
+    web_url: 'https://github.com/topics/redux'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png
+  - name: Storybook
+    web_url: 'https://github.com/topics/storybook'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/storybook/storybook.png
+  - name: Webpack
+    web_url: 'https://github.com/topics/webpack'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/webpack/webpack.png
+  - name: Web Components
+    web_url: 'https://github.com/topics/web-components'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/web-components/Web-Components.png
   - name: Git
-    web_url: https://github.com/topics/git
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png
-
+    web_url: 'https://github.com/topics/git'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png
   - name: GitHub API
-    web_url: https://github.com/topics/github-api
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/github-api/github-api.png
-
+    web_url: 'https://github.com/topics/github-api'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/github-api/github-api.png
   - name: macOS
-    web_url: https://github.com/topics/macos
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/macos/macos.png
-
+    web_url: 'https://github.com/topics/macos'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/macos/macos.png
   - name: Homebrew
-    web_url: https://github.com/topics/homebrew
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/homebrew/homebrew.png
-
+    web_url: 'https://github.com/topics/homebrew'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/homebrew/homebrew.png
   - name: Ubuntu
-    web_url: https://github.com/topics/ubuntu
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png
-
+    web_url: 'https://github.com/topics/ubuntu'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ubuntu/ubuntu.png
   - name: Windows
-    web_url: https://github.com/topics/windows
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/windows/windows.png
- 
+    web_url: 'https://github.com/topics/windows'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/windows/windows.png
+  - name: GraphQL
+    web_url: 'https://github.com/topics/graphql'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png
+  - name: MongoDB
+    web_url: 'https://github.com/topics/mongodb'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png
   - name: MySQL
-    web_url: https://github.com/topics/mysql
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png
-
+    web_url: 'https://github.com/topics/mysql'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png
   - name: PostgreSQL
-    web_url: https://github.com/topics/postgresql
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png
-
+    web_url: 'https://github.com/topics/postgresql'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png
   - name: SQL
-    web_url: https://github.com/topics/sql
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png
- 
+    web_url: 'https://github.com/topics/sql'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png
+  - name: ASP.NET
+    web_url: 'https://github.com/topics/aspnet'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/aspnet/aspnet.png
+  - name: .NET
+    web_url: 'https://github.com/topics/dotnet'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/93d8a67084f94b2a444e510199a6e7622e5b09a3/topics/dotnet/dotnet.png
   - name: Ruby
-    web_url: https://github.com/topics/ruby
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png
-
+    web_url: 'https://github.com/topics/ruby'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png
+  - name: Rails
+    web_url: 'https://github.com/topics/rails'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/rails/rails.png
+  - name: Jeykll
+    web_url: 'https://github.com/topics/jeykll'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jeykll/jeykll.png
   - name: PHP
-    web_url: https://github.com/topics/php
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png
-
+    web_url: 'https://github.com/topics/php'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png
   - name: WordPress
-    web_url: https://github.com/topics/wordpress
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ wordpress/wordpress.png
-
+    web_url: 'https://github.com/topics/wordpress'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/
+      wordpress/wordpress.png
+  - name: Python
+    web_url: 'https://github.com/topics/python'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+  - name: Django
+    web_url: 'https://github.com/topics/django'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/django/django.png
+  - name: Awesome Lists
+    web_url: 'https://github.com/topics/awesome'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/awesome/awesome.png
+  - name: Documentation
+    web_url: 'https://github.com/topics/documentation'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/documentation/documentation.png
   - name: Markdown
-    web_url: https://github.com/topics/markdown
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/markdown/markdown.png
- 
-  - name: Sketch
-    web_url: https://github.com/topics/sketch
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sketch/sketch.png
+    web_url: 'https://github.com/topics/markdown'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/markdown/markdown.png
+  - name: Raspberry Pi
+    web_url: 'https://github.com/topics/raspberry-pi'
+    image_url: >-
+      https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/raspberry-pi/Raspberry-Pi.png
+  - name: Serverless
+    web_url: 'https://github.com/topics/serverless'
