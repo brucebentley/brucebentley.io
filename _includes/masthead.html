@@ -4,10 +4,10 @@
   {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
-<img src="https://avatars.githubusercontent.com/u/48764634?v=4" class="circle mb-3" style="max-width: 150px;">
-<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">Wan Soo Seo</h1>
+<img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
+<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-  🇰🇷  South Korean O.G.  |  Where It Matters Most  🇺🇸
+  {{ user.bio }}
 </p>
 
 {% if include.metadata %}
@@ -15,9 +15,9 @@
     {% if user.name %}
       <div class="{{ metadata_styles }}">
         {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-        <a href="https://github.com/swansu" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          @swansu
-        </a>
+         <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+           @{{ user.login }}
+         </a>
       </div>
     {% endif %}
     {% if user.email %}
@@ -31,7 +31,7 @@
     {% if user.location %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
-       Centreville, VA
+        {{ user.location }}
       </div>
     {% endif %}
     {% if site.social_media %}
