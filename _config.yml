@@ -16,16 +16,16 @@ defaults:
       layout: post
 
 social_media:
-  behance: brucebentley
-  dribbble: brucebentley
+  # behance: brucebentley
+  # dribbble: brucebentley
   facebook: brucembentley
-  hackerrank: brucebentley
+  # hackerrank: brucebentley
   instagram: brucebentley
-  keybase: brucebentley
+  # keybase: brucebentley
   linkedin: brucembentley
   medium: brucebentley
   stackoverflow: 9990956
-  telegram: brucebentley
+  # telegram: brucebentley
   twitter: bruce_bentley
   website: 'https://brucebentley.io/'
   youtube: BruceBentley
