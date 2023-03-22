@@ -1,6 +1,6 @@
 <h1 align="center">
-    <a href="https://www.wansooseo.com/" alt="Bruce Bentley's Development Portfolio">
-        <code>wansooseo.com/</code>
+    <a href="https://dev.brucebentley.io/" alt="Bruce Bentley's Development Portfolio">
+        <code>dev.brucebentley.io/</code>
     </a>
 </h1>
 
