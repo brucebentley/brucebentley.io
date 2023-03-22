@@ -1,16 +1,20 @@
 layout: sidebar
-style: dark
+style: light
+
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
+
 permalink: '/:year/:month/:day/:title/'
+
 defaults:
   - scope:
       path: ''
       type: posts
     values:
       layout: post
+
 social_media:
   behance: brucebentley
   dribbble: brucebentley
@@ -25,6 +29,7 @@ social_media:
   twitter: bruce_bentley
   website: 'https://brucebentley.io/'
   youtube: BruceBentley
+
 projects:
   sort_by: pushed
   limit: 9
@@ -32,6 +37,7 @@ projects:
     archived: false
     forks: true
     projects: null
+
 topics:
   - name: AWS ( Amazon Web Services )
     web_url: 'https://github.com/topics/aws'
