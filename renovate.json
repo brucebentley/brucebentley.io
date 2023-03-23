@@ -1,0 +1,34 @@
+{
+  "timezone": "America/New_York",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":maintainLockFilesWeekly",
+    ":preserveSemverRanges",
+    ":rebaseStalePrs",
+    "group:all",
+    "schedule:weekly"
+  ],
+  "platform": "github",
+  "repositories": ["brucebentley/dev.brucebentley.io"],
+  "assignees": ["brucebentley"],
+  "automergeType": "pr",
+  "baseBranches": ["main", "develop"],
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+  "prCreation": "not-pending",
+  "rebaseWhen": "behind-base-branch",
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "description": "Require dashboard approval for major updates",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance"],
+      "automerge": true
+    }
+  ]
+}
