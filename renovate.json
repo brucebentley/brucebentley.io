@@ -1,20 +1,34 @@
 {
-  "extends": ["config:base", ":preserveSemverRanges", "group:all", "schedule:weekly", ":maintainLockFilesWeekly"],
-  "includePaths": ["Gemfile"],
-  "semanticCommits": true,
-  "rangeStrategy": "bump",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": "group:all"
-  },
-  "rebaseLabel": "rebase",
-  "rebaseWhen": "auto",
+  "timezone": "America/New_York",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":maintainLockFilesWeekly",
+    ":preserveSemverRanges",
+    ":rebaseStalePrs",
+    "group:all",
+    "schedule:weekly"
+  ],
+  "platform": "github",
+  "repositories": ["brucebentley/dev.brucebentley.io"],
+  "assignees": ["brucebentley"],
+  "automergeType": "pr",
+  "baseBranches": ["main", "develop"],
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+  "prCreation": "not-pending",
+  "rebaseWhen": "behind-base-branch",
+  "platformAutomerge": true,
   "packageRules": [
     {
-      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "description": "Require dashboard approval for major updates",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance"],
       "automerge": true
     }
-  ],
-  "commitMessageAction": "Update",
-  "timezone": "America/New_York"
+  ]
 }
