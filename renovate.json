@@ -10,7 +10,7 @@
     "schedule:weekly"
   ],
   "platform": "github",
-  "repositories": ["brucebentley/dev.brucebentley.io"],
+  "repositories": ["brucebentley/brucebentley.io"],
   "assignees": ["brucebentley"],
   "automergeType": "pr",
   "baseBranches": ["main", "develop"],
