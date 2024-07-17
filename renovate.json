@@ -15,7 +15,7 @@
   "automergeType": "pr",
   "baseBranches": ["main", "develop"],
   "dependencyDashboard": true,
-  "dependencyDashboardTitle": "Renovate Dashboard 🤖",
+  "dependencyDashboardTitle": "🤖  Renovate Dashboard  🤖",
   "prCreation": "not-pending",
   "rebaseWhen": "behind-base-branch",
   "platformAutomerge": true,
